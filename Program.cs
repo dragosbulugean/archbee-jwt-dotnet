@@ -15,7 +15,7 @@ IBase64UrlEncoder urlEncoder = new JwtBase64UrlEncoder();
 IJwtEncoder encoder = new JwtEncoder(algorithm, serializer, urlEncoder);
 
 var jwtToken = encoder.Encode(payload, secret);
-var archbeeLink = $"https://help.title21.com/?jwt={jwtToken}";
+var archbeeLink = $"https://docs.yourcompany.com/?jwt={jwtToken}";
 
 Console.WriteLine($"JWT Token: {jwtToken}");
 Console.WriteLine($"Archbee Link: {archbeeLink}");
